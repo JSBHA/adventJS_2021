@@ -16,8 +16,7 @@ function daysToXmas(date) {
   
     return diffDays;
   }
-
-  const date = new Date('Dec 25, 2021');
+ 
   const date1 = new Date('Dec 1, 2021');
   const date2 = new Date('Dec 24, 2021 00:00:01');
   const date3 = new Date('Dec 24, 2021 23:59:59');
