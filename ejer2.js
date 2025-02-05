@@ -14,5 +14,5 @@ function listGifts(letter) {
   return contador;
 }
 const regalos = listGifts(carta);
-const carta = 'bici coche balón _playstation bici coche peluche'
+const carta = "bici coche balón _playstation bici coche peluche";
 console.log(regalos);
