@@ -1,6 +1,6 @@
 function getCoins(change) {
   const coins = [1, 2, 5, 10, 20, 50];
-  // El array que almacenará cuántas monedas de cada tipo se usan
+  //El array que almacenará cuántas monedas de cada tipo se usan
   const result = [0, 0, 0, 0, 0, 0];
 
   // Iteramos de la moneda más grande a la más pequeña
