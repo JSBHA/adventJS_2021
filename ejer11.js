@@ -3,7 +3,6 @@ function shouldBuyFidelity(times) {
   if (times < 1) return false;
 
   const ticketPrice = 12; // valor entrada
-  const voucherPrice = 250; // valor targeta
   const discount = 0.75; // descuento
   const totalWithNormalPrice = ticketPrice * times;
 
