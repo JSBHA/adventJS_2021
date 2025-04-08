@@ -8,13 +8,14 @@ function decodeNumbers(symbols) {
   };
   let total = 0;
 
-  for (let i = 0; i < symbols.lenth; i++) {
+  for (let i = 0; i < symbols.length; i++) {
     const currentValue = symbolMap[symbols[i]];
 
     // Si no se encuentra el símbolo en el map, devolvemos NaN
     if (currentValue === undefined) return NaN;
 
     // Si el valor del símbolo actual es mayor que el anterior, resta el valor anterior
+
     total +=
       currentValue < symbolMap[symbols[i + 1]] ? -currentValue : currentValue;
   }
