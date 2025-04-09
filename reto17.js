@@ -1,13 +1,17 @@
 function countPackages(carriers, carrierID) {
   // Buscar el carrier específico y sus subcarriers
   let carrier = carriers.find(([name]) => name === carrierID);
-  
+
   if (!carrier) return 0; // Si no se encuentra el carrier, devolvemos 0
-  
+
+  //Desestructuración de arreglos asignamos a esas nuevas varibles paquetes y subtransportitas
   let [, packages, subCarrier] = carrier;
+
+  // Recursivamente sumar los paquetes de los subcarriers
   let totalPackages =
     packages +
     subCarrier.reduce((sum, subCarrierID) => {
+      // Llamamos recursivamente para contar los paquetes de cada subcarrier
       return sum + countPackages(carriers, subCarrierID);
     }, 0);
   return totalPackages;
